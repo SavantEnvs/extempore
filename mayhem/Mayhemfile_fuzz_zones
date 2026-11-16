@@ -1,0 +1,8 @@
+project: savantenvs/extempore
+target: fuzz_zones
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_zones/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_zones
+    libfuzzer: true

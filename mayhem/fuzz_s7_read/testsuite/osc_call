@@ -1,0 +1,1 @@
+(osc-callback 0.0 "/synth/freq" 440 0.5 "hi" (list 1 2.5 "x"))

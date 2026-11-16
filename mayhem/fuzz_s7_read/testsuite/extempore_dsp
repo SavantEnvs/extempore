@@ -1,0 +1,4 @@
+(bind-func dsp:DSP
+  (lambda (in:SAMPLE time:i64 chan:i64 data:SAMPLE*)
+    (* 0.1 (sin (* 6.2831853 440.0 (/ (i64tof (modulo time 44100)) 44100.0))))))
+(dsp:set! dsp)

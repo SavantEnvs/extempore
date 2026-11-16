@@ -1,0 +1,1 @@
+(let loop ((i 0) (h (make-hash-table))) (if (< i 3) (begin (hash-table-set! h i (* i i)) (loop (+ i 1) h)) h))

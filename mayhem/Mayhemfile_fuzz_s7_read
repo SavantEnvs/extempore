@@ -1,0 +1,9 @@
+project: savantenvs/extempore
+target: fuzz_s7_read
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_s7_read/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_s7_read
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_s7_read/fuzz_s7_read.dict

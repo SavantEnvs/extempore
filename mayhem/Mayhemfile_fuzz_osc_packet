@@ -1,0 +1,9 @@
+project: savantenvs/extempore
+target: fuzz_osc_packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_osc_packet/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_osc_packet
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_osc_packet/fuzz_osc_packet.dict
